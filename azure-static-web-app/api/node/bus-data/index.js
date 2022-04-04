@@ -14,7 +14,8 @@ module.exports = async function (context, req) {
   
     context.log ('Context Response :', context.res);
     context.res = {        
-        body: JSON.parse(busData.recordset[0]["locationData"])
+        // body: JSON.parse(busData.recordset[0]["locationData"])
+        body: JSON.parse('{"result":true, "count":42}')
     };
 }
 
