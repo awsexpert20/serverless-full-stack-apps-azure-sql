@@ -111,7 +111,8 @@
                 style: styles
             });
             map.addLayer(vector);
-            
+            console.log(f1);
+            console.log(f2);
             derived_feature = f2 ?? f1;
             extent = derived_feature.getGeometry().getExtent();
             minx = derived_feature.getGeometry().getExtent()[0];
